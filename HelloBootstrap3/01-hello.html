@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+  <!-- Bootstrap met à jour le style par défaut (voir chapitre doc CSS) -->
+  <h1>Hello</h1>
+
+  <!-- Bootstrap créer des composants qui n'existe par défaut (doc chapitre Composants) -->
+  <!-- Abbréviations Emmet -->
+  <!-- div.btn-group>button.btn.btn-default*3>lorem1 -->
+  <div class="btn-group">
+    <button class="btn btn-default">Lorem.</button>
+    <button class="btn btn-default">Perspiciatis.</button>
+    <button class="btn btn-default">Quo?</button>
+  </div>
+
+  <!-- Bootstrap ajoute un comportement JavaScript à certaines balise (doc chapitre JavaScript) -->
+  <button class="btn btn-default" title="S'affiche au survol" data-toggle="tooltip">
+    Survolez moi !
+  </button>
+
+  
+
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+</body>
+</html>

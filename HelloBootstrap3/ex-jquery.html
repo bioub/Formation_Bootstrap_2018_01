@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-6">
+        <div class="input-group">
+          <input class="form-control" id="saisie">
+          <div class="input-group-btn">
+            <button class="btn btn-primary" id="ajouter">+</button>
+          </div>
+        </div>
+        <div class="list-group">
+          <div class="list-group-item">
+            Acheter du pain
+          </div>
+          <div class="list-group-item">
+            Acheter du lait
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+  <script>
+      // Avec jQuery (créer une petite todolist)
+      
+      // 1 - Ecouter le clic du bouton plus (en le sélection par id)
+      // (vous pouvez vérifier avec alert('Coucou') que ça fonctionne)
+      $('#ajouter').on('click', function() {
+        var saisie = $('#saisie').val();
+        $('<div></div>')
+          .addClass('list-group-item')
+          .html(saisie)
+          .prependTo('.list-group');
+      });
+
+      // 2 - Récupérer la valeur saisie dans le champs avec la fonction
+      // $().val() de jQuery
+  
+      // 3 - Ajouter cette valeur au début ou à la find de la list-group
+      // en utilisant les fonctions $().prepend() ou $().append()
+  
+      // (optionnel)
+      // Rajouter un bouton - sur chaque, au clic duquel vous supprimez
+      // la ligne (vous aurez besoin de $().parent() et $().remove())
+  
+    </script>
+  
+
+</body>
+</html>

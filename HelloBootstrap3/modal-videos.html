@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+  <div class="btn-group launch-video">
+    <div class="btn btn-default" data-title="Pandas" data-video="./videos/pandas.mp4">Pandas</div>
+    <div class="btn btn-default" data-title="Chats" data-video="./videos/chats.mp4">Chats</div>
+  </div>
+
+  <div class="modal fade" id="modal-videos">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Vidéo</h4>
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-4by3">
+            <video src="./videos/pandas.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+  <script>
+    // jQuery
+    // $('selecteur css') permet de sélectionner un ou plusieurs
+    // éléments avec jQuery
+    // $(event.target) selectionne l'élément qui a déclenché l'événement
+    // (ex: le bouton sur lequel vous avez cliqué)
+
+    // $().on('nom event', function() {});
+    // appelle la fonction quand l'événement se produit
+
+    // $().find() permet de permet de sélectionner un ou plusieurs
+    // éléments avec jQuery en partant d'un première sélection
+    // (cherche dans un sous arbre)
+
+    // $().attr('src') lit l'attribut src
+    // $().attr('src', 'valeur') écrit l'attribut src
+
+    // dans le cas de data-video par ex on peut aussi écrire
+    // $().data('video')
+    // $().attr('data-video')
+
+    // $().html() lit le contenu entre la balise ouvrante et fermante
+    // $().html('valeur') écrit le contenu entre la balise ouvrante et fermante
+    // $().append('valeur') idem html mais ajoute à la fin du contenu
+    // $().prepend('valeur') idem html mais ajoute à au début du contenu
+
+
+    $('.launch-video .btn').on('click', function(event) {
+      $('#modal-videos').find('video').attr('src', $(event.target).data('video'));
+      $('#modal-videos').find('h4').html($(event.target).data('title'));
+      $('#modal-videos').modal('show');
+    })
+
+    $('#modal-videos').on('shown.bs.modal', function () {
+      $('#modal-videos').find('video')[0].play();
+    });
+
+    $('#modal-videos').on('shown.bs.modal', function () {
+      $('#modal-videos').find('video')[0].play();
+    });
+
+    $('#modal-videos').on('hide.bs.modal', function () {
+      $('#modal-videos').find('video')[0].pause();
+    });
+  </script>
+
+</body>
+</html>

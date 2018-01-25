@@ -1,0 +1,28 @@
+/* .navbar-default .navbar-nav > .active > a
+ Spécificité : 0 3 1
+
+ Spécificité : 0 1 0
+ .active {
+  background-color: red;
+ }
+ Le background-color ne s'applique pas, car la
+ spécifité du sélecteur est plus faible
+ */
+
+/*
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: red;
+}
+*/
+
+/*
+Exercice, créer un theme qui :
+- Met le bouton primary en violet (ou autre de votre choix)
+- Idem pour les liens
+- Idem pour la navbar (en un peu plus clair)
+- Dans la navbar, faire les modification
+nécessaire, pour les élements actifs, survolé, etc...
+- Reprendre la couleur de la navbar pour l'appliquer
+au fond de "Présentation"
+*/
