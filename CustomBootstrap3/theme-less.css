@@ -1,0 +1,62 @@
+/*
+Exercice :
+Reprendre ce fichier et utiliser au maximum less :
+- variables
+- nested rules 
+- fonction sur les couleurs darken ou lighten
+*/
+.btn-primary {
+  background-color: purple;
+  border-color: #670066;
+  color: #670066;
+}
+.btn-primary:hover {
+  color: purple;
+  background-color: #4d004d;
+  border-color: #430043;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: purple;
+  background-color: #4d004d;
+  border-color: #430043;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: purple;
+  background-color: #290029;
+  border-color: #000000;
+}
+a {
+  color: cyan;
+}
+a:hover,
+a:focus {
+  color: teal;
+}
+.navbar-default {
+  background-color: cyan;
+  border-color: teal;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: teal;
+}
+#presentation {
+  background-color: cyan;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: teal;
+}
+.tooltip-inner {
+  background-color: teal;
+}

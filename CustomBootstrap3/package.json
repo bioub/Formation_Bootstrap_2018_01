@@ -3,5 +3,13 @@
     "bootstrap": "^3.3.7",
     "bootswatch": "^3.3.7",
     "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "less": "^2.7.3",
+    "nodemon": "^1.14.11"
+  },
+  "scripts": {
+    "build:less": "lessc --include-path=node_modules/bootstrap/less custom.less custom.css",
+    "watch:less": "nodemon -e less -x \"npm run build:less\""
   }
 }

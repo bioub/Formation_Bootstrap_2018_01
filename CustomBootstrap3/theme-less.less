@@ -1,0 +1,74 @@
+/*
+Exercice :
+Reprendre ce fichier et utiliser au maximum less :
+- variables
+- nested rules 
+- fonction sur les couleurs darken ou lighten
+*/
+
+@colorPrimary: purple;
+
+
+.btn-primary {
+  background-color: @colorPrimary;
+  border-color: darken(@colorPrimary, 5%);
+  color: darken(@colorPrimary, 5%);
+
+  &:hover {
+    color: @colorPrimary;
+    background-color: darken(@colorPrimary, 10%);
+        border-color: darken(@colorPrimary, 12%);
+  }
+
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    color: @colorPrimary;
+    background-color: darken(@colorPrimary, 10%);
+        border-color: darken(@colorPrimary, 12%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: @colorPrimary;
+      background-color: darken(@colorPrimary, 17%);
+          border-color: darken(@colorPrimary, 25%);
+    }
+  }
+}
+
+
+
+a {
+  color: cyan;
+
+  &:hover, &:focus {
+    color: teal;
+  }
+}
+
+.navbar-default {
+  background-color: cyan;
+  border-color: teal;
+
+  .navbar-nav > .active > a {
+    &,
+    &:hover,
+    &:focus {
+      background-color: teal;
+    }
+  }
+}
+
+
+#presentation {
+  background-color: cyan;
+}
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: teal;
+}
+
+.tooltip-inner {
+  background-color: teal;
+}
