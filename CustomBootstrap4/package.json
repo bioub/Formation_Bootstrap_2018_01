@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.11",
+    "postcss-cli": "^4.1.1",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "build:scss:prod": "node-sass --output-style compressed --output css scss",
+    "build:scss": "node-sass --source-map true --source-map-contents --output-style expanded --output css scss",
+    "watch:scss": "nodemon -e scss -x \"npm run build:scss\"",
+    "autoprefixer": "postcss --use autoprefixer --replace css/*.css",
+    "build:prod": "rimraf css && npm run build:scss:prod && npm run autoprefixer"
+  },
+  "browserslist": []
+}
