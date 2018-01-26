@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-6">
+      <div class="col-md-6 col-md-offset-3">
         <div class="input-group">
           <input class="form-control" id="saisie">
           <div class="input-group-btn">
@@ -40,10 +40,9 @@
       // 1 - Ecouter le clic du bouton plus (en le sélection par id)
       // (vous pouvez vérifier avec alert('Coucou') que ça fonctionne)
       $('#ajouter').on('click', function() {
-        var saisie = $('#saisie').val();
         $('<div></div>')
           .addClass('list-group-item')
-          .html(saisie)
+          .text($('#saisie').val())
           .prependTo('.list-group');
       });
 

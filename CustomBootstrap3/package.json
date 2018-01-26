@@ -9,7 +9,7 @@
     "nodemon": "^1.14.11"
   },
   "scripts": {
-    "build:less": "lessc --include-path=node_modules/bootstrap/less custom.less custom.css",
+    "build:less": "lessc --source-map --include-path=node_modules/bootstrap/less custom.less custom.css",
     "watch:less": "nodemon -e less -x \"npm run build:less\""
   }
 }

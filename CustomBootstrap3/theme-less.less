@@ -6,7 +6,7 @@ Reprendre ce fichier et utiliser au maximum less :
 - fonction sur les couleurs darken ou lighten
 */
 
-@colorPrimary: purple;
+@colorPrimary: lightyellow;
 
 
 .btn-primary {
@@ -21,8 +21,7 @@ Reprendre ce fichier et utiliser au maximum less :
   }
 
   &:active,
-  &.active,
-  .open > .dropdown-toggle& {
+  &.active {
     color: @colorPrimary;
     background-color: darken(@colorPrimary, 10%);
         border-color: darken(@colorPrimary, 12%);
@@ -40,35 +39,36 @@ Reprendre ce fichier et utiliser au maximum less :
 
 
 a {
-  color: cyan;
+  color: @colorPrimary;
 
   &:hover, &:focus {
-    color: teal;
+    color: darken(@colorPrimary, 12%);
   }
 }
 
+
 .navbar-default {
-  background-color: cyan;
-  border-color: teal;
+  background-color: @colorPrimary;
+  border-color: darken(@colorPrimary, 12%);
 
   .navbar-nav > .active > a {
     &,
     &:hover,
     &:focus {
-      background-color: teal;
+      background-color: darken(@colorPrimary, 25%);
     }
   }
 }
 
 
 #presentation {
-  background-color: cyan;
+  background-color: @colorPrimary;
 }
 
 .tooltip.right .tooltip-arrow {
-  border-right-color: teal;
+  border-right-color: darken(@colorPrimary, 12%);
 }
 
 .tooltip-inner {
-  background-color: teal;
+  background-color: darken(@colorPrimary, 12%);
 }

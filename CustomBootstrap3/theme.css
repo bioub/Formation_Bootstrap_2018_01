@@ -80,3 +80,7 @@ var event = document.createEvent('Event');
 event.initEvent('mouseover', false, false);
 $0.dispatchEvent(event);
 */
+
+.jumbotron {
+  background-color: aliceblue;
+}

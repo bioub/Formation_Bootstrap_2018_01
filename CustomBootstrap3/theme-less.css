@@ -6,57 +6,53 @@ Reprendre ce fichier et utiliser au maximum less :
 - fonction sur les couleurs darken ou lighten
 */
 .btn-primary {
-  background-color: purple;
-  border-color: #670066;
-  color: #670066;
+  background-color: lightyellow;
+  border-color: #ffffc6;
+  color: #ffffc6;
 }
 .btn-primary:hover {
-  color: purple;
-  background-color: #4d004d;
-  border-color: #430043;
+  color: lightyellow;
+  background-color: #ffffad;
+  border-color: #ffffa3;
 }
 .btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  color: purple;
-  background-color: #4d004d;
-  border-color: #430043;
+.btn-primary.active {
+  color: lightyellow;
+  background-color: #ffffad;
+  border-color: #ffffa3;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
-.open > .dropdown-toggle.btn-primary:hover,
 .btn-primary:active:focus,
 .btn-primary.active:focus,
-.open > .dropdown-toggle.btn-primary:focus,
 .btn-primary:active.focus,
-.btn-primary.active.focus,
-.open > .dropdown-toggle.btn-primary.focus {
-  color: purple;
-  background-color: #290029;
-  border-color: #000000;
+.btn-primary.active.focus {
+  color: lightyellow;
+  background-color: #ffff89;
+  border-color: #ffff61;
 }
 a {
-  color: cyan;
+  color: lightyellow;
 }
 a:hover,
 a:focus {
-  color: teal;
+  color: #ffffa3;
 }
 .navbar-default {
-  background-color: cyan;
-  border-color: teal;
+  background-color: lightyellow;
+  border-color: #ffffa3;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  background-color: teal;
+  background-color: #ffff61;
 }
 #presentation {
-  background-color: cyan;
+  background-color: lightyellow;
 }
 .tooltip.right .tooltip-arrow {
-  border-right-color: teal;
+  border-right-color: #ffffa3;
 }
 .tooltip-inner {
-  background-color: teal;
+  background-color: #ffffa3;
 }
