@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.11",
+    "postcss-cli": "^4.1.1"
+  }
+}
